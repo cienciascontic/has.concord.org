@@ -1,7 +1,7 @@
 # Satic website for has.concord.org
 
-This repository is the home for has.concord.org. Follow these directions to deploy This
-site to the correct S3 bucket, and deploy.
+This repository is the home for has.concord.org.
+Follow these directions to develop and deploy this website.
 
 ## Requirements
 
@@ -11,10 +11,10 @@ site to the correct S3 bucket, and deploy.
 
 These are simplified instructions for now. Actual workflow TBD
 
-1. edit files inside `_site`
-2. run a local webserver: `cd _site && python -c 'import SimpleHTTPServer; SimpleHTTPServer.test()'`
+1. Edit files inside `_site`
+2. Run a local webserver to preview changes: `cd _site && python -c 'import SimpleHTTPServer; SimpleHTTPServer.test()'`
 3. Make sure your changes look good.
-4. Add your changes: `git add *``
+4. Add your changes: `git add .`
 5. Commit your changes: `git commit -m 'updated website'`
 6. Push your changes `git push origin master`
 
@@ -23,9 +23,11 @@ These are simplified instructions for now. Actual workflow TBD
 
 1. Make sure you have the s3_website gem installed. `gem install s3_website`
 2. Export your AWS credentials:
-    export S3_ID=xxxx
-    export S3_SECRET=xxxxx
-3. Push the changes to the bucket  `s3_website push`
+
+        export S3_ID=xxxx
+        export S3_SECRET=xxxxx
+
+3. Push the changes to the bucket:  `s3_website push`
 
 ## Changing configuration
 
