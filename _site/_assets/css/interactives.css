@@ -1,0 +1,110 @@
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+a, a:visited { color:#479492; }
+a:hover, a:focus { color: #da5936; }
+body {
+  background: #bddfdf;
+  color: #3f3f3f;
+  font: 90% trebuchet, arial, helvetica, sans-serif;
+  }
+h1 {
+  background: url(../img/int/has-logo.png) no-repeat;
+  color: #75a643;
+  font: 300 1.25em museo-sans, georgia, times, 'times new roman', serif;
+  height: 50px;
+  margin-bottom: .5em;
+  overflow: hidden;
+  text-indent: 100%;
+  width: 187px;
+  white-space: nowrap;
+  }
+h2 {
+  color: #eb8723;
+  font: 300 2em museo-slab, georgia, times, 'times new roman', serif;
+  margin-bottom: .25em;
+  }
+p {
+  line-height: 150%;
+  }
+sub { font-size: .7em; vertical-align: sub; }
+.container {
+  background: #fff;
+  height: auto;
+  min-height: 550px;
+  margin-top: 20px;
+  padding: 20px;
+  width: 920px;
+  }
+#copyright {
+  float: left;
+  font-size: .9em;
+  margin: 0;
+  width: 50%;
+  }
+#cc-logo {
+  float: right;
+  display: block;
+  height: 40px;
+  margin: 0;
+  width: 130px;
+  }
+#footer {
+  background: transparent;
+  height: auto;
+  min-height: 75px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 920px;
+  }
+
+/* #Page Styles
+================================================== */
+#model {
+  height: 490px;
+  overflow: hidden;
+  position: relative;
+  width: 920px;
+  }
+  #model img {
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    }
+iframe {
+  border: none;
+  height: 500px;
+  width: 100%;
+  }
+#instructions-link {
+  display: block;
+  font-size: .8em;
+  margin: .5em 0 2em;
+  text-align: right;
+  }
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {}

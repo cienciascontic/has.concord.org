@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Movement of Pollutants - High-Adventure Science Interactive</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <script type="text/javascript" src="https://use.typekit.com/hdw8ayt.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/skeleton/1.2/base.min.css" />
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/skeleton/1.2/skeleton.min.css" />
+  <link rel="stylesheet" href="_assets/css/interactives.css" />
+  <style>
+    #model { height: 530px; }
+	#model iframe { height: 530px; }
+  </style>
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="container">
+    <h1>High-Adventure Science</h1>
+    <h2>Movement of Pollutants</h2>
+    <p>Can you place power plants so all three cities have good air quality at the same time when the wind is blowing from any direction? Investigate how mountains and wind direction affect air quality.</p>
+    <div id="model">
+      <iframe frameborder="0" scrolling="no" src="http://concord-consortium.github.io/agentscript-models/air-pollution-aerial/index.html"></iframe>
+      <img id="instructions-overlay" onclick="toggleInstructionsOverlay()" src="_assets/img/int/air-pollution-aerial-instructions.png" />
+    </div>
+    <a id="instructions-link" href="air-pollution-aerial.html#" onclick="toggleInstructionsOverlay(); return false;">hide instructions</a>
+	<p>This interactive is part of the  High-Adventure Science "Will the air be clean enough to breathe?" lesson. To use it and other lessons with your students, <a href="http://has.portal.concord.org/portal/teachers/new">create a High-Adventure Science account</a>.</p>
+  </div>
+  <div id="footer" class="container">
+    <p id="copyright">&copy; Copyright 2015 The Concord Consortium. All rights reserved.</p>  
+    <a href="http://concord.org/" alt="The Concord Consortium - Revolutionary digital learning for math, science and engineering" id="cc-logo"><img src="_assets/img/int/cc-logo.png" alt="The Concord Consortium" /></a>
+  </div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+function toggleInstructionsOverlay() {
+  if ($('#instructions-overlay').css('display') != 'block') {
+    $('#instructions-overlay').fadeIn('slow');
+    $('#instructions-link').text('hide instructions');
+  } else {
+    $('#instructions-overlay').fadeOut('slow');
+    $('#instructions-link').text('show instructions');
+  }
+}
+</script>
+</body>
+</html>
